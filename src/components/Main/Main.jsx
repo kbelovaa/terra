@@ -366,13 +366,13 @@ const Main = () => {
                       onFocus={() => setIsTextActive(true)}
                       onBlur={() => setIsTextActive(false)}
                     ></textarea>
-                    <label className="label">Text</label>
+                    <label className="label">Text (optional)</label>
                     {!isFormValid && (!name || !email) && <p className="message">Please fill in all fields</p>}
                   </div>
                   {loading ? (
                     <div className="spinner spinner_small"></div>
                   ) : (
-                    <button className={`btn contact-us__btn ${checkIsFormValid() ? '' : 'inactive'}`} type="submit">
+                    <button className={`btn form__btn ${checkIsFormValid() ? '' : 'inactive'}`} type="submit">
                       Send
                     </button>
                   )}

@@ -577,6 +577,7 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 140%;
+    animation: fadeIn 0.3s ease-in;
   }
 }
 
@@ -585,6 +586,10 @@
 
   &__title {
     margin-bottom: 40px;
+  }
+
+  &__btn {
+    margin-top: 20px;
   }
 }
 

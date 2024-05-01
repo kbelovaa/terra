@@ -37,62 +37,60 @@
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(50px);
-  border: none;
-  color: #9c9c9c;
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  border: 1px solid transparent;
+  color: #000;
   padding: 22px 30px;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 90%;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.54px;
   transition: all 0.3s ease;
-  height: 59px;
+  height: 58px;
   width: 100%;
-  position: absolute;
-  top: 18px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
 
   &:active,
   &:focus,
   &:focus-visible {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid #bddbfd;
+    background: rgba(255, 255, 255, 0.9);
   }
 
   &-wrap {
     position: relative;
     min-height: 58px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     &:last-of-type {
       margin-bottom: 0;
-      min-height: 100px;
-
-      & .label {
-        top: 68px;
-      }
-
-      &.active .label {
-        top: 0;
-      }
+      min-height: 116px;
     }
 
     & textarea {
       resize: none;
-      min-height: 82px;
+      min-height: 116px;
     }
   }
 }
 
 .invalid .invalid-field {
-  border-bottom: 1px solid #ff7070;
+  border: 1px solid #ffb6b6;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .label {
   color: #9c9c9c;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 90%;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.54px;
   position: absolute;
   top: 22px;
   left: 30px;
@@ -101,20 +99,20 @@
 
   .active & {
     color: #9c9c9c;
-    font-size: 14px;
-    top: 0;
-    left: 0;
+    font-size: 12px;
+    letter-spacing: -0.36px;
+    top: 8px;
   }
 }
 
 .message {
-  font-family: 'SF Pro Display', sans-serif;
-  color: #fff;
-  font-size: 14px;
+  color: #9c9c9c;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 130%;
-  letter-spacing: 0.28px;
+  line-height: 90%;
+  letter-spacing: -0.36px;
   animation: fadeIn 0.3s ease-in;
+  margin: 6px 0 0 23px;
 }
 
 .btn {
@@ -122,6 +120,8 @@
   border: 0.5px solid #2f5a8a;
   background: rgba(189, 219, 253, 0.05);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
   text-align: center;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
@@ -134,31 +134,33 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
 
-  // &.inactive {
-  //   background: #F2F2F2;
-  //   color: #ADC1D3;
-  //   cursor: default;
+  &.inactive {
+    border: 0.5px solid rgba(47, 90, 138, 0.7);
+    color: rgba(47, 90, 138, 0.7);
+    cursor: default;
 
-  //   &:hover,
-  //   &:active {
-  //     background: #F2F2F2;
-  //   }
-  // }
+    &:hover,
+    &:active {
+      color: rgba(47, 90, 138, 0.7);
+      background: rgba(189, 219, 253, 0.05);
+    }
+  }
 
-  // &:hover {
-  //   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
-  // }
+  &:hover {
+    background: rgba(189, 219, 253, 0.16);
+  }
 
-  // &:active {
-  //   box-shadow: none;
-  // }
+  &:active {
+    background: rgba(189, 219, 253, 0.5);
+    color: #0c1a29;
+  }
 }
 
 .spinner {
   margin: 100px auto 0;
-  border: 10px solid #d0e6fbe7;
+  border: 10px solid #c8d4e1e7;
   border-radius: 50%;
-  border-top: 10px solid #0558a5;
+  border-top: 10px solid #2f5a8a;
   width: 100px;
   height: 100px;
   animation: spin 1s linear infinite;
@@ -168,7 +170,7 @@
     height: 53px;
     margin: 0;
     border-width: 7px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
