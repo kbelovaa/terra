@@ -5,6 +5,18 @@
 .container {
   width: 1440px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1440px) {
+    width: 1024px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 744px;
+  }
+
+  @media screen and (max-width: 744px) {
+    width: 100%;
+  }
 }
 
 .info {
@@ -13,6 +25,10 @@
   margin-left: 80px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 1440px) {
+    margin-left: 40px;
+  }
 }
 
 .title {
