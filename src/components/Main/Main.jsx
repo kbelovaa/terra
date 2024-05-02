@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import sendData from '../../http/sendData';
 import img1 from '../../images/img1.png';
 import img1s from '../../images/img1_744.png';
+import dot from '../../images/dot.png';
 import img2 from '../../images/img2.png';
 import img2m from '../../images/img2_1024.png';
 import img3 from '../../images/img3.png';
@@ -131,8 +132,10 @@ const Main = () => {
               <p className="image__text">Ready to move in September.</p>
             </div>
             <div className="image__area">
-              <div className="image__circle1"></div>
-              <div className="image__circle2"></div>
+              <img src={dot} className="image__dot" alt="Building" />
+              <div className="image__circle1">
+                <div className="image__circle2"></div>
+              </div>
             </div>
             {windowWidth <= 744 ? (
               <svg
@@ -192,7 +195,11 @@ const Main = () => {
               </svg>
             )}
           </div>
-          <h1 className="info-block__title">Marbella - Terra Brand New Apartment</h1>
+          <h1 className="info-block__title">
+            Marbella - Terra
+            <br />
+            Brand New Apartment
+          </h1>
           <p className="info-block__text">
             Welcome to Terra - a modern apartment with everything conveniently located within walking distance - the
             beach with its promenade and restaurants, the vibrant boulevard, the state-of-the-art I/O Luxury Health and
@@ -430,13 +437,27 @@ const Main = () => {
           </div>
           <div className="data__line">
             <span className="data__label">Address</span>
-            <p className="data__info">
-              Carretera de Cadiz, km 176, Centro de Negocios
-              <br />
-              Oasis, local 9, 29602, Marbella (Málaga)
-              <br />
-              NIF72522485
-            </p>
+            {windowWidth <= 744 ? (
+              <p className="data__info">
+                {`Carretera de Cadiz, km\u00A0176,`}
+                <br />
+                Centro de Negocios
+                <br />
+                Oasis, local 9, 29602,
+                <br />
+                Marbella (Málaga)
+                <br />
+                NIF72522485
+              </p>
+            ) : (
+              <p className="data__info">
+                Carretera de Cadiz, km 176, Centro de Negocios
+                <br />
+                Oasis, local 9, 29602, Marbella (Málaga)
+                <br />
+                NIF72522485
+              </p>
+            )}
           </div>
           <div className="data__line">
             <span className="data__label"></span>
