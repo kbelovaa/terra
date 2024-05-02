@@ -248,6 +248,10 @@
       width: 116px;
       height: 445px;
     }
+
+    @media screen and (max-width: 744px) {
+      width: 34.22%;
+    }
   }
 
   &__title {
