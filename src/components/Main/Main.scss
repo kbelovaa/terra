@@ -27,6 +27,11 @@
       right: calc((100vw - 744px) / 2);
       top: 499px;
     }
+
+    @media screen and (max-width: 744px) {
+      right: calc((100vw - 399px) / 2 - 174px);
+      top: 369px;
+    }
   }
 
   &_2 {
@@ -46,6 +51,10 @@
       right: calc((100vw - 744px) / 2 + 84px);
       top: 2377px;
     }
+
+    @media screen and (max-width: 744px) {
+      right: calc((100vw - 399px) / 2 - 261px);
+    }
   }
 
   &_3 {
@@ -60,7 +69,12 @@
     }
 
     @media screen and (max-width: 1024px) {
-      right: calc((100vw - 744px) / 2 + 478px);
+      left: calc((100vw - 744px) / 2 + 478px);
+    }
+
+    @media screen and (max-width: 744px) {
+      left: calc((100vw - 399px) / 2 + 248px);
+      top: 3650px;
     }
   }
 
@@ -78,6 +92,11 @@
     @media screen and (max-width: 1024px) {
       right: calc((100vw - 744px) / 2 - 48px);
     }
+
+    @media screen and (max-width: 744px) {
+      right: calc((100vw - 399px) / 2 - 393px);
+      top: 4000px;
+    }
   }
 
   &_5 {
@@ -93,6 +112,11 @@
 
     @media screen and (max-width: 1024px) {
       left: calc((100vw - 744px) / 2 + 306px);
+    }
+
+    @media screen and (max-width: 744px) {
+      left: calc((100vw - 399px) / 2 + 191px);
+      top: 4750px;
     }
   }
 
@@ -110,6 +134,11 @@
     @media screen and (max-width: 1024px) {
       right: calc((100vw - 744px) / 2 - 340px);
     }
+
+    @media screen and (max-width: 744px) {
+      right: calc((100vw - 399px) / 2 - 685px);
+      top: 5920px;
+    }
   }
 
   &_7 {
@@ -125,6 +154,11 @@
 
     @media screen and (max-width: 1024px) {
       left: calc((100vw - 744px) / 2 + 327px);
+    }
+
+    @media screen and (max-width: 744px) {
+      left: calc((100vw - 399px) / 2 + 72px);
+      top: 7300px;
     }
   }
 
@@ -142,6 +176,11 @@
     @media screen and (max-width: 1024px) {
       left: calc((100vw - 744px) / 2);
       top: 9276px;
+    }
+
+    @media screen and (max-width: 744px) {
+      left: calc((100vw - 399px) / 2);
+      top: 8750px;
     }
   }
 
@@ -164,6 +203,13 @@
       height: 692px;
       left: calc((100vw - 744px) / 2 + 26px);
       top: 11314px;
+    }
+
+    @media screen and (max-width: 744px) {
+      width: 511px;
+      height: 511px;
+      left: calc((100vw - 399px) / 2 - 56px);
+      top: 9440px;
     }
   }
 }
