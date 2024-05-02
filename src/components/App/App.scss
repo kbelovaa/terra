@@ -29,6 +29,10 @@
   @media screen and (max-width: 1440px) {
     margin-left: 40px;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 20px;
+  }
 }
 
 .title {
@@ -40,6 +44,11 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 34px;
+    letter-spacing: 0.68px;
+  }
 }
 
 .text {
@@ -47,6 +56,10 @@
   font-weight: 400;
   line-height: 150%;
   width: 608px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
 }
 
 .input {

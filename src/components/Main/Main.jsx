@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import sendData from '../../http/sendData';
 import img1 from '../../images/img1.png';
+import img1s from '../../images/img1_744.png';
 import img2 from '../../images/img2.png';
 import img2m from '../../images/img2_1024.png';
 import img3 from '../../images/img3.png';
@@ -9,11 +10,15 @@ import img5 from '../../images/img5.png';
 import img5m from '../../images/img5_1024.png';
 import img6 from '../../images/img6.png';
 import img7 from '../../images/img7.png';
+import img7s from '../../images/img7_744.png';
 import img8 from '../../images/img8.png';
+import img8s from '../../images/img8_744.png';
 import img9 from '../../images/img9.png';
 import img10 from '../../images/img10.png';
+import img10s from '../../images/img10_744.png';
 import img11 from '../../images/img11.png';
 import img11m from '../../images/img11_1024.png';
+import img11s from '../../images/img11_744.png';
 import img12 from '../../images/img12.png';
 import img12m from '../../images/img12_1024.png';
 import img13 from '../../images/img13.png';
@@ -49,6 +54,8 @@ const Main = () => {
       const width = window.innerWidth;
       setWindowWidth(width);
     };
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -113,7 +120,11 @@ const Main = () => {
         <section className="info-block">
           <div className="info-block__block"></div>
           <div className="image">
-            <img src={img1} className="image__pic" alt="Building" />
+            {windowWidth <= 1024 ? (
+              <img src={img1s} className="image__pic" alt="Building" />
+            ) : (
+              <img src={img1} className="image__pic" alt="Building" />
+            )}
             <div className="image__ref">
               <span className="image__place">Here is it!</span>
               <p className="image__text">.. your new address in the mediterranean.</p>
@@ -245,8 +256,16 @@ const Main = () => {
             (averaging 19°C yearly, reaching 26°C in summer months), and the delight and longevity that come with
             Mediterranean food.
           </p>
-          <img src={img7} className="nature__img2" alt="Photo" />
-          <img src={img8} className="nature__img3" alt="Photo" />
+          {windowWidth <= 1024 ? (
+            <img src={img7s} className="nature__img2" alt="Photo" />
+          ) : (
+            <img src={img7} className="nature__img2" alt="Photo" />
+          )}
+          {windowWidth <= 1024 ? (
+            <img src={img8s} className="nature__img3" alt="Photo" />
+          ) : (
+            <img src={img8} className="nature__img3" alt="Photo" />
+          )}
         </section>
         <section className="apartment">
           <div className="apartment__block"></div>
@@ -273,8 +292,14 @@ const Main = () => {
               sink.
             </p>
           </div>
-          <img src={img10} className="kitchen__img1" alt="Photo" />
-          {windowWidth <= 1440 ? (
+          {windowWidth <= 1024 ? (
+            <img src={img10s} className="kitchen__img1" alt="Photo" />
+          ) : (
+            <img src={img10} className="kitchen__img1" alt="Photo" />
+          )}
+          {windowWidth <= 1024 ? (
+            <img src={img11s} className="kitchen__img2" alt="Photo" />
+          ) : windowWidth <= 1440 ? (
             <img src={img11m} className="kitchen__img2" alt="Photo" />
           ) : (
             <img src={img11} className="kitchen__img2" alt="Photo" />
