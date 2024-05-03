@@ -358,7 +358,7 @@ const Main = () => {
           <div className="terraces__info info">
             <h2 className="title">Terraces and pool</h2>
             <p className="text">
-              The apartment has an impressive terrace of 33 m2 that allows for several zones with ample space for dining
+              The apartment has an impressive terrace of 33 m² that allows for several zones with ample space for dining
               and sun-lounging. The view is green and beautiful and you enjoy the sunset from the terrace. The common
               grounds are park-like with lush plants and a sheltered pool area, featuring sun loungers, showers and
               bathrooms.
