@@ -129,7 +129,7 @@ const Main = () => {
             <div className="image__ref">
               <span className="image__place">Here is it!</span>
               <p className="image__text">.. your new address in the mediterranean.</p>
-              <p className="image__text">Ready to move in September.</p>
+              <p className="image__text">Ready to move in June.</p>
             </div>
             <div className="image__area">
               <img src={dot} className="image__dot" alt="Building" />
@@ -228,7 +228,7 @@ const Main = () => {
             </div>
             <div className="info-block__parameter">
               <span className="info-block__key">Completion</span>
-              <span className="info-block__value">Sept 2024</span>
+              <span className="info-block__value">June 2024</span>
             </div>
           </div>
         </section>
